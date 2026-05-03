@@ -63,7 +63,7 @@ fn spawn_player(
                 index: start_index,
             },
         ),
-        Transform::from_translation(Vec3::ZERO),
+        Transform::from_translation(Vec3::new(0., 0., 1.1)), // move the player just above the terrain
         AnimationState {
             facing,
             moving: false,
@@ -78,9 +78,6 @@ fn move_player(
     time: Res<Time>,
     mut player: Single<(&mut Transform, &mut AnimationState), With<Player>>,
 ) {
-    // let Ok((mut transform, mut anim)) = player.single_mut() else {
-    //     return;
-    // };
     let (transform, anim) = &mut *player;
 
     let mut direction = Vec2::ZERO;
