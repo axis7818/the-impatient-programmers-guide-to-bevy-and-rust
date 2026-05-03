@@ -1,0 +1,18 @@
+use bevy::prelude::*;
+
+use crate::player::PlayerPlugin;
+
+mod player;
+
+fn main() {
+    App::new()
+        .insert_resource(ClearColor(Color::WHITE))
+        .add_plugins(DefaultPlugins)
+        .add_systems(Startup, setup_camera)
+        .add_plugins(PlayerPlugin)
+        .run();
+}
+
+fn setup_camera(mut commands: Commands) {
+    commands.spawn(Camera2d);
+}
