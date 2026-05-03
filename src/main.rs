@@ -8,19 +8,20 @@ use bevy::{
 
 use bevy_procedural_tilemaps::prelude::*;
 
-use crate::map::generate::{map_pixel_dimensions, setup_generator};
+use crate::map::generate::{MAP_PIXEL_DIMENSIONS, setup_generator};
 use crate::player::PlayerPlugin;
 
 fn main() {
-    let map_size = map_pixel_dimensions();
-
     App::new()
         .insert_resource(ClearColor(Color::WHITE))
         .add_plugins(
             DefaultPlugins
                 .set(WindowPlugin {
                     primary_window: Some(Window {
-                        resolution: WindowResolution::new(map_size.x as u32, map_size.y as u32),
+                        resolution: WindowResolution::new(
+                            MAP_PIXEL_DIMENSIONS.x as u32,
+                            MAP_PIXEL_DIMENSIONS.y as u32,
+                        ),
                         resizable: false,
                         ..default()
                     }),

@@ -5,10 +5,7 @@
 ## Chapters
 
 - [x] [Chapter 1 - Let There Be a Player](https://aibodh.com/posts/bevy-rust-game-development-chapter-1/)
-- [ ] [Chapter 2 - Let There Be a World](https://aibodh.com/posts/bevy-rust-game-development-chapter-2/)
-  
-> [bookmark](https://aibodh.com/posts/bevy-rust-game-development-chapter-2/#adding-the-grass-layer)
-
+- [x] [Chapter 2 - Let There Be a World](https://aibodh.com/posts/bevy-rust-game-development-chapter-2/)
 - [ ] [Chapter 3 - Let The Data Flow](https://aibodh.com/posts/bevy-rust-game-development-chapter-3/)
 
 ## Resources

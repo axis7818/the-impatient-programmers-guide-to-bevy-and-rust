@@ -1,3 +1,4 @@
+use crate::map::generate::GRID_Z;
 use bevy::prelude::*;
 
 // Atlas constants
@@ -63,7 +64,7 @@ fn spawn_player(
                 index: start_index,
             },
         ),
-        Transform::from_translation(Vec3::new(0., 0., 1.1)), // move the player just above the terrain
+        Transform::from_translation(Vec3::new(0., 0., GRID_Z as f32 + 1.)), // move the player just above the terrain
         AnimationState {
             facing,
             moving: false,
