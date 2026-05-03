@@ -10,5 +10,6 @@
 
 ## Resources
 
+- [jamesfebin/ImpatientProgrammerBevyRust](https://github.com/jamesfebin/ImpatientProgrammerBevyRust): the repo with reference source code
 - [Universal LPC Spritesheet Generator](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#sex=male&body=Body_Color_light&head=Human_Male_light): Character Generator based on Universal-LPC-Spritesheet
 - [Ghx Proc(edural) Gen(eneration)](https://github.com/Henauxg/ghx_proc_gen): A Rust library for 2D & 3D procedural generation with Model synthesis/Wave function Collapse, also available for the Bevy engine.
